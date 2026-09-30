@@ -3,7 +3,6 @@ import { Geist, Geist_Mono, Sora } from "next/font/google";
 import "./globals.css";
 import HeaderComponent from "@/components/header";
 import FooterComponent from "@/components/footer";
-import FirebaseInitializer from "@/components/firebase/FirebaseInitializer";
 import { SplashScreenLoaderProvider } from "@/context/SplashScreenLoaderContext";
 
 const geistSans = Geist({
@@ -67,7 +66,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${sora.variable}  antialiased`}
       >
         <SplashScreenLoaderProvider>
-          <FirebaseInitializer />
           <HeaderComponent />
           {children}
           <FooterComponent />
