@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #000000;
+  --foreground: #ededed;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-sora {
+  font-family: var(--font-sora), system-ui, sans-serif;
+}
+
+/* .container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+} */
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: grid;
+  place-items: center; /* Centers items both vertically and horizontally */
+}
+
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
+  pointer-events: none;
+}
+
+/* Ensure the Swiper container doesn't interfere with the pagination positioning */
+.mySwiper {
+  position: relative;
+  padding-bottom: 0 !important; /* Remove any default padding that might affect the layout */
+  overflow: visible !important;
+}
+
+/* Style the custom pagination container */
+.custom-swiper-pagination {
+  position: relative;
+  bottom: 0 !important; /* Override Swiper's default positioning */
+  display: flex;
+  justify-content: center;
+  margin-top: 16px; /* Add some space between the card and the dots */
+}
+
+/* Style the pagination dots */
+.custom-swiper-pagination .swiper-pagination-bullet {
+  background: #ffffff66; /* Inactive dot color (semi-transparent white) */
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px; /* Space between dots */
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet-active {
+  background: #c3e89b; /* Active dot color (green) */
+}

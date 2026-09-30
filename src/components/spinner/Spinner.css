@@ -1,0 +1,120 @@
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  animation: pulse 6s ease-in-out infinite alternate;
+}
+
+.logoImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.shinyEffect {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  border-bottom: 0 solid rgba(248, 167, 107, 0.05);
+  box-shadow:
+    0 -5px 10px 10px rgba(248, 167, 107, 0.4) inset,
+    0 -3px 8px 5px rgba(248, 167, 107, 0.5) inset,
+    0 -1px 3px rgba(64, 224, 208, 0.8) inset,
+    0 -1px 1px rgba(64, 224, 208, 0.7) inset,
+    0 1px 0px rgba(64, 224, 208, 1),
+    0 1px 1px rgba(64, 224, 208, 1),
+    0 2px 2px rgba(64, 224, 208, 0.9),
+    0 3px 4px rgba(64, 224, 208, 0.6),
+    0 3px 5px 5px rgba(64, 224, 208, 0.4);
+  filter: blur(2px);
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-8px) scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Logo hover effect */
+.logo-hover {
+  transition: transform 0.3s ease, filter 0.5s ease;
+}
+
+.logo-hover:hover {
+  transform: scale(1.05);
+}
+
+/* Progress ring smooth animation */
+.progress-ring {
+  transition: background 0.3s ease-out;
+}
+
+/* Glassmorphism effect */
+.glass-effect {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Floating dots glow effect */
+.dot-glow {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+  filter: blur(0.5px);
+}
+
+/* Responsive animations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Simple Logo Spinner Animations */
+
+/* Smooth transitions for logo */
+.logo-transition {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
