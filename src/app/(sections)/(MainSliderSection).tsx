@@ -14,7 +14,7 @@ interface CryptoLandingProps {
 }
 
 const CryptoLanding: FC<CryptoLandingProps> = ({
-  title = "AI Powered Token Ecosystem Built on Private Insights",
+  title = "AI Powered Token Ecosystem Built on Private Insights.",
   subtitle = "Turn Conversations into Value",
   description = "Traditional AI models rely on public data, but real insights come from private discussions. Our AI Agent learns directly from engaged Telegram communities analyzing high quality interactions while keeping data private. In return, contributors are rewarded with tokens, creating a decentralized system where knowledge drives value.",
   leftImageSrc = "/images/zonarleft.png",
