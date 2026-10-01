@@ -1,4 +1,4 @@
-# Zonar — AI Ecosystem Landing Website
+# Zonar- AI Ecosystem Website
 
 A responsive, animated marketing website for **Zonar**, a concept platform where a Telegram bot learns from community conversations and rewards high-quality contributions. The site is built with **Next.js 15, React 19, TypeScript and Tailwind CSS v4**, includes interactive **3D scenes made in Spline**, and is exported as a fully static site deployed on **Vercel**.
 
@@ -8,6 +8,7 @@ A responsive, animated marketing website for **Zonar**, a concept platform where
 
 ## Website
 
+<img width="2480" height="3509" alt="zonar" src="https://github.com/user-attachments/assets/6b990865-699e-4a02-a1cc-1063ba9cdd31" />
 
 
 ---
