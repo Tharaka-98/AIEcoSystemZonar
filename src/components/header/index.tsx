@@ -17,6 +17,7 @@ const HeaderComponent = () => {
   const navItems: NavItem[] = [
     { label: "Home", href: "#" },
     { label: "How it Works", href: "#how-it-works" },
+    { label: "Live Demo", href: "#live-demo" },
     { label: "Our Solution", href: "#our-solution" },
     // { label: "Token Mining", href: "#" },
     // { label: "Project", href: "#" },
