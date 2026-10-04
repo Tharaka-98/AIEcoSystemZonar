@@ -3,6 +3,7 @@
 A responsive, animated marketing website for **Zonar**, a concept platform where a Telegram bot learns from community conversations and rewards high-quality contributions. The site is built with **Next.js 15, React 19, TypeScript and Tailwind CSS v4**, includes interactive **3D scenes made in Spline**, and is exported as a fully static site deployed on **Vercel**.
 
 **Live demo:** https://ai-eco-system-zonar.vercel.app/
+**Live API:** https://zonar-api-c0bt.onrender.com/swagger
 
 ---
 
