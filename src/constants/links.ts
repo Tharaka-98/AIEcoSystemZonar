@@ -1,7 +1,7 @@
 const links = {
     x: "https://x.com/zonareth",
-    telegram: "https://t.me/zonareth",
-    getStarted: "https://t.me/zonareth",
+    telegram: "https://t.me/@ZonaraDemo_bot",
+    getStarted: "https://t.me/ZonaraDemo_bot",
     gitbook: "https://zonar.gitbook.io/zonar",
 
     etherscan: "https://etherscan.io/token/0xa55c0488119f756b65cca584a9dbc1984d640dd4",
